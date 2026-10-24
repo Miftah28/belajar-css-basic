@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p a {
+        color: red;
+      }
+      section p{
+        color: blue;
+      }
+      section h1{
+        color: yellow;
+      } */
+      /* descendant */
+      /* div p {
+        color: green;
+      } */
+      /* child */
+      div > p {
+        color: rgba(49, 45, 161, 1);
+        text-decoration: underline;
+      }
+      h2 + p{
+        background-color: rgb(217, 255, 104);
+        color:red;
+      }
+      h3 ~ p {
+        background-color: rgb(0, 0, 119);
+        color: hsla(115, 100%, 46%, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="first-paragraph">
+        contoh descendant pada combinator selector <a href="">contoh saja</a>
+      </p>
+      <section>
+        <h1>Contoh</h1>
+        <p>contoh descendant pada combinator selector 2</p>
+      </section>
+      <h1>contoh</h1>
+      <p>contoh ketiga</p>
+      <h2>contoh untuk Adjacent Sibling Selector</h2>
+      <p>hasil contoh Adjacent Sibling Selector</p>
+      <p>contoh hasil kedua</p>
+      <h3>contoh untuk General Sibling Selector</h3>
+      <p>hasil contoh General Sibling Selector</p>
+      <p>hasil contoh General Sibling Selector</p>
+      <p>hasil contoh General Sibling Selector</p>
+      <a href="">contoh saja</a>
+    </div>
+  </body>
+</html>
